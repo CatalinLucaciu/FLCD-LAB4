@@ -1,0 +1,27 @@
+# States
+q0,q1,q2
+# Alphabet
+a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,0,1,2,3,4,5,6,7,8,9
+# Initial state
+q0
+# Final states
+q1,q2
+# Transitions
+q0,a,q1
+q1,a,q1
+q0,b,q1
+q1,b,q1
+...
+q1,Z,q1
+q1,0,q1
+q1,1,q1
+...
+q1,9,q1
+q0,0,q2
+q0,1,q2
+...
+q0,9,q2
+q2,0,q2
+q2,1,q2
+...
+q2,9,q2

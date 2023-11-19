@@ -1,0 +1,20 @@
+<FA> ::= <States> <Alphabet> <InitialState> <FinalStates> <Transitions>
+
+<States> ::= "# States" <EOL> <StateList>
+<StateList> ::= <State> { "," <State> }
+
+<Alphabet> ::= "# Alphabet" <EOL> <SymbolList>
+<SymbolList> ::= <Symbol> { "," <Symbol> }
+
+<InitialState> ::= "# Initial state" <EOL> <State>
+
+<FinalStates> ::= "# Final states" <EOL> <StateList>
+
+<Transitions> ::= "# Transitions" <EOL> { <Transition> <EOL> }
+<Transition> ::= <State> "," <Symbol> "," <State>
+
+<State> ::= "q" <Digit>
+<Symbol> ::= <Letter> | <Digit>
+<Digit> ::= "0" | "1" | ... | "9"
+<Letter> ::= "a" | "b" | ... | "z" | "A" | "B" | ... | "Z"
+<EOL> ::= <end-of-line symbol>
